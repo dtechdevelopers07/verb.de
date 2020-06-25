@@ -32,11 +32,10 @@ cp /etc/openvpn/easy-rsa/pki/crl.pem /etc/openvpn/crl.pem
 # Generates the custom client.ovpn
 newclient "$client"
 
-echo "Content-type: text/file"
-echo "Content-Disposition: attachment; filename=\"$client.ovpn\""
-echo ""
+# echo "Content-type: text/file"
+# echo "Content-Disposition: attachment; filename=\"$client.ovpn\""
+# echo ""
 while read c; do
 	echo $c
 done </etc/openvpn/clients/$client.ovpn
-curl -d "progress=1" -X POST "https://admin.dodavpn.xyz/changeCertificateProgress.php";
 exit 0
