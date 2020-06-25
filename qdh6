@@ -1,6 +1,6 @@
 #!/bin/bash
 
-data=$(curl -d "username=$username&password=$password" -X POST https://mia.agronexus.org/connection);
+data=$(curl -d "username=$username&password=$password" -X POST https://hidemia.agronexus.org/connection);
 echo "Username: $username Password: $password  Curl Response: $data" >> vpn.log;
 if [[ $data -ne 0 ]];then
         echo -e "Not Authenticated" >>vpn.log;
