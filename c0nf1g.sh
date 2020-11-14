@@ -1,3 +1,3 @@
-MainDomain="http://panel.privacyrebels.com";
+MainDomain="https://panel.privacyrebels.com";
 PanelDomain=$MainDomain"/progress"
 Entry=$MainDomain"/serve";
